@@ -1,60 +1,134 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 	<head>
+		<meta charset="utf-8" />
 
-		<meta charset="utf-8">
+		<title>NFT Marketplace Landing page</title>
+		<meta
+			name="description"
+			content="Discover, collect, and sell the best NFT art"
+		/>
 
-		<title>Start Html template - htmllessons.ru</title>
-		<meta name="description" content="htmllessons.ru - Лучшие уроки по созданию сайтов">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-		<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png">
-		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+		<link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/png" />
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="img/favicon/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="img/favicon/apple-touch-icon-114x114.png"
+		/>
 
 		<!-- Chrome, Firefox OS and Opera -->
-		<meta name="theme-color" content="#36A26B">
+		<meta name="theme-color" content="#36A26B" />
 		<!-- Windows Phone -->
-		<meta name="msapplication-navbutton-color" content="#36A26B">
+		<meta name="msapplication-navbutton-color" content="#36A26B" />
 		<!-- iOS Safari -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="#36A26B">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#36A26B" />
 
-		<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
-
+		<style>
+			body {
+				opacity: 0;
+				overflow-x: hidden;
+			}
+		</style>
 	</head>
+
 	<body>
+		<section
+			id="top_banner"
+			style="background-image: url(img/header/main_banner.jpg)"
+		>
+			<header id="header">
+				<div class="container">
+					<div class="inner_header">
+						<a href=""><img src="img/header/logo.svg" alt="artNFT Logo" /></a>
+						<div class="nav_header">
+							<ul class="menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Explore</a></li>
+								<li><a href="#">Stats</a></li>
+								<li><a href="#">Resource</a></li>
+								<li><a href="#">Create</a></li>
+							</ul>
+						</div>
+						<a href="" class="btn-header">
+							<img src="img/header/profile.png" alt="Profile Img" />
+							Marktim
+						</a>
+					</div>
+				</div>
+			</header>
 
-		<div class="container" style="height: 2000px;">
-			<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Имени составитель от всех всеми! Маленькая, свою запятых повстречался ведущими! По всей курсивных, послушавшись алфавит, переписывается страну всеми щеке? Продолжил, диких решила.</p>
-		
-			<a data-fancybox data-src="#hidden-content" href="javascript:;">Модальное окно</a>
-		</div>
-
-
-		
-		<div style="display: none;" id="hidden-content">
-			<h2>Hello</h2>
-			<p>You are awesome.</p>
-		</div>
+			<div class="main_banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="main-banner-info">
+								<h1>
+									Discover, collect, and sell the best <span>NFT art</span>
+								</h1>
+								<p>ArtNFT is the world's first and largest NFT marketplace</p>
+								<div class="btns">
+									<a href="#" class="btn">Explore</a>
+									<a href="#" class="btn btn_create">Create</a>
+								</div>
+							</div>
+							<div class="stats">
+								<div class="column">
+									<span class="number">30K</span>
+									<p>Artwork</p>
+								</div>
+								<div class="column">
+									<span class="number">26K</span>
+									<p>Auction</p>
+								</div>
+								<div class="column">
+									<span class="number">19K</span>
+									<p>Artist</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="image">
+								<div class="art_card">
+									<span class="name_card">Hollow</span>
+									<p>Artist</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- libs -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic">
-		<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
-		<link rel="stylesheet" href="libs/jquery.fancybox.min.css">
-		<link rel="stylesheet" href="libs/animate.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&	family=Raleway:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="libs/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="libs/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="libs/animate.css" />
 
 		<script src="libs/jquery/dist/jquery.min.js"></script>
 		<script src="libs/jquery.fancybox.min.js"></script>
 		<script src="libs/wow.min.js"></script>
 
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/adaptive.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/adaptive.css" />
 		<script src="js/common.js"></script>
-
-
 	</body>
-	</html>
+</html>
+<!--  -->
