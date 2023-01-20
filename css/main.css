@@ -1,216 +1,76 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  *:before, *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-  *:focus {
-    outline: none; }
+/*
+Error: Undefined variable: "$glass".
+        on line 191 of C:\Users\Tapani\Desktop\Websites Portfolio\NFT Marketplace Landing page\sass\main.sass
 
-*::-webkit-input-placeholder {
-  color: #c0c0c0;
-  opacity: 1; }
+186: 			>p
+187: 				font-family: $subtitle-font
+188: 				font-size: 16px
+189: 	.hero
+190: 		height: 640px
+191: 		background: $glass
+192: 		filter: drop-shadow(0px 0px 200px rgba(200, 200, 200, 0.5))
+193: 		border: 2px solid $accent
+194: 		>img
+195: 			height: 100%
+196: 			object-fit: contain
 
-*:-moz-placeholder {
-  color: #c0c0c0;
-  opacity: 1; }
-
-*::-moz-placeholder {
-  color: #c0c0c0;
-  opacity: 1; }
-
-*:-ms-input-placeholder {
-  color: #c0c0c0;
-  opacity: 1; }
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #000; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: #000; }
-
-html, body {
-  height: 100%; }
-
-body {
-  font-size: 16px;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.65;
-  font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
-  opacity: 1;
-  color: white;
-  background-color: #1B1B1B; }
-
-.container {
-  max-width: 1200px;
-  padding: 0; }
-
-img {
-  max-width: 100%; }
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-a {
-  text-decoration: none; }
-
-.btn-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 120px;
-  height: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: black;
-  background-color: #CAFC01;
-  font-size: 14px;
-  border-radius: 40px;
-  padding: 10px 0px 10px 10px; }
-  .btn-header > img {
-    margin-right: 8px; }
-
-.btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 16px 32px;
-  gap: 10px;
-  width: 140px;
-  height: 60px;
-  background: #CAFC01;
-  border-radius: 32px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  letter-spacing: 0.03em;
-  color: black; }
-  .btn:hover {
-    color: #A8D201;
-    background: rgba(0, 0, 0, 0);
-    border: 1.5px solid #A8D201; }
-
-#top_banner {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh; }
-
-#header {
-  margin-bottom: 35px; }
-  #header .inner_header {
-    padding-top: 27px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    #header .inner_header .nav_header {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      #header .inner_header .nav_header .menu {
-        list-style-type: none; }
-        #header .inner_header .nav_header .menu > li {
-          display: inline-block;
-          position: relative;
-          margin-right: 40px; }
-          #header .inner_header .nav_header .menu > li a {
-            display: block;
-            text-decoration: none;
-            font-family: "Poppins", sans-serif;
-            color: white;
-            -webkit-transition: 0.5s ease-in-out;
-            transition: 0.5s ease-in-out;
-            border: 1.5px solid transparent; }
-            #header .inner_header .nav_header .menu > li a:hover {
-              color: #A8D201;
-              border-bottom: 1.5px solid #A8D201; }
-
-.main_banner .main-banner-info {
-  padding-bottom: 80px; }
-  .main_banner .main-banner-info > h1 {
-    padding-top: 120px;
-    width: 720px;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 72px; }
-    .main_banner .main-banner-info > h1 > span {
-      color: #CAFC01; }
-  .main_banner .main-banner-info > p {
-    padding-top: 24px;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    color: #A8A8A8; }
-  .main_banner .main-banner-info .btns {
-    padding-top: 40px; }
-    .main_banner .main-banner-info .btns > .btn {
-      margin-right: 16px; }
-    .main_banner .main-banner-info .btns > .btn_create {
-      color: #CAFC01;
-      background: rgba(0, 0, 0, 0);
-      border: 1.5px solid #A8D201; }
-      .main_banner .main-banner-info .btns > .btn_create:hover {
-        background: #A8D201;
-        color: black; }
-.main_banner .stats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  max-width: 420px;
-  padding: 20px;
-  margin: 0;
-  background: linear-gradient(94.51deg, #1B1B1B -20%, rgba(27, 27, 27, 0) 120%);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 32px; }
-  .main_banner .stats .column {
-    margin: auto; }
-    .main_banner .stats .column:nth-child(-n+2) {
-      border-right: 1.5px solid white;
-      padding-right: 24px;
-      margin-right: 24px; }
-    .main_banner .stats .column .number {
-      font-size: 48px;
-      font-weight: 700;
-      color: #CAFC01; }
-    .main_banner .stats .column > p {
-      font-family: "Poppins", sans-serif;
-      font-size: 16px; }
-.main_banner .image {
-  height: 640px;
-  padding: 0;
-  background: #A8A8A8; }
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+C:\Users\Tapani\Desktop\Websites Portfolio\NFT Marketplace Landing page\sass\main.sass:191
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$glass\".\A         on line 191 of C:\Users\Tapani\Desktop\Websites Portfolio\NFT Marketplace Landing page\sass\main.sass\A \A 186: 			>p\A 187: 				font-family: $subtitle-font\A 188: 				font-size: 16px\A 189: 	.hero\A 190: 		height: 640px\A 191: 		background: $glass\A 192: 		filter: drop-shadow(0px 0px 200px rgba(200, 200, 200, 0.5))\A 193: 		border: 2px solid $accent\A 194: 		>img\A 195: 			height: 100%\A 196: 			object-fit: contain"; }
