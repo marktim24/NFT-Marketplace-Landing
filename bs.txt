@@ -1,1 +1,2 @@
 browser-sync start --server --files "css/*.css, *.html, js/*.js"
+cd C:/Program Files (x86)/Koala && start Koala.exe
