@@ -93,11 +93,22 @@ a
 	letter-spacing: 0.03em
 	color: $black
 	border: 1.5px solid $accent
+	cursor: pointer
 	&:hover
 		color: $hover
 		background: rgba(0, 0, 0, 0)
 		border: 1.5px solid $hover
 		
+
+.heading_card
+	font-family: $main-font
+	font-size: 28px
+	font-weight: bold
+
+.art
+	display: flex
+	flex-direction: column
+	justify-content: center
 
  
 #top_banner
@@ -198,19 +209,12 @@ a
 			background: $glass
 			backdrop-filter: blur(5px)
 			border-radius: 32px
-		.art
-			display: flex
-			flex-direction: column
-			justify-content: center
+		>.art
 			padding: 22px
 			margin: 5px 30px
 			position: absolute
 			bottom: 0
 			left: 0
-			.heading_card
-				font-family: $main-font
-				font-size: 28px
-				font-weight: bold
 			>span
 				font-family: $subtitle-font
 				&:last-child
@@ -245,5 +249,34 @@ a
 			>time
 				color: $accent
 				font-weight: bold
+
+
+#notable_drops
+	height: 100vh
+	background: $white
+	h2
+		display: flex
+		font-family: $main-font
+		font-weight: 700
+		font-size: 48px
+		text-transform: capitalize
+		color: $background
+		align-items: center
+
+
+	.holder
+		max-width: 380px
+		height: 640px
+		display: flex
+		flex-direction: column
+		background: $subtitle-color
+		border-radius: 32px
+		.row_holder
+			display: inline-block
+			width: 380px
+			position: absolute
+			bottom: 0
+			height: 220px
+			background: $background
 
 
