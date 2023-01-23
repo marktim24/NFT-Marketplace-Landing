@@ -45,7 +45,7 @@ body {
   overflow-x: hidden;
   opacity: 1;
   color: white;
-  background-color: #1B1B1B; }
+  background-color: #1b1b1b; }
 
 .container {
   max-width: 1200px;
@@ -257,13 +257,6 @@ a {
         color: #CAFC01;
         font-weight: bold;
         margin-left: 5px; }
-      .main_banner .hero > .art > span .price::before {
-        content: "";
-        display: inline-block;
-        width: 8px;
-        height: 15px;
-        margin-right: 4px;
-        background-image: url("../img/main/logos_ethereum.svg"); }
     .main_banner .hero > .art > .btn {
       margin-top: 16px; }
   .main_banner .hero .auction {
@@ -290,39 +283,92 @@ a {
       color: #CAFC01;
       font-weight: bold; }
 
+.price::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  margin-right: 4px;
+  background-image: url("../img/main/logos_ethereum.svg"); }
+
 #notable_drops {
   height: 100vh;
-  background: white; }
+  background: white;
+  padding: 80px; }
   #notable_drops h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 32px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 48px;
     text-transform: capitalize;
-    color: #1B1B1B;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    color: #1b1b1b; }
   #notable_drops .holder {
     max-width: 380px;
     height: 640px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background: #A8A8A8;
     border-radius: 32px; }
+    #notable_drops .holder > .auction {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 8px 16px;
+      margin: 24px;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      border-radius: 16px;
+      background: rgba(27, 27, 27, 0.6);
+      -webkit-backdrop-filter: blur(4px);
+              backdrop-filter: blur(4px); }
+      #notable_drops .holder > .auction > time {
+        font-weight: bold; }
     #notable_drops .holder .row_holder {
       display: inline-block;
-      width: 380px;
+      width: 100%;
+      padding: 24px 0 0 24px;
       position: absolute;
       bottom: 0;
-      height: 220px;
-      background: #1B1B1B; }
+      background: #1b1b1b;
+      border-radius: 0px 0px 32px 32px; }
+      #notable_drops .holder .row_holder > span {
+        display: block; }
+        #notable_drops .holder .row_holder > span:nth-child(2) {
+          margin-bottom: 24px; }
+        #notable_drops .holder .row_holder > span > p {
+          display: inline; }
+        #notable_drops .holder .row_holder > span > a {
+          color: #CAFC01;
+          font-weight: bold;
+          margin-left: 5px; }
+      #notable_drops .holder .row_holder .btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 16px 32px;
+        margin: 24px 24px 24px 0; }
 
 /*# sourceMappingURL=main.css.map */
