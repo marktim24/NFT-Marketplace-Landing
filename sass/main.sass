@@ -53,6 +53,27 @@ body
 	max-width: 1200px
 	padding: 0
 
+section
+	height: 100vh
+	background: $background
+	padding: 80px
+
+h2 
+	font-family: $main-font
+	font-style: normal
+	font-weight: 700
+	font-size: 48px
+	line-height: 38px
+	text-align: center
+
+.heading_subtitle
+	font-family: $subtitle-font
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 30px
+	color: $subtitle-color
+
 img
 	max-width: 100%
 
@@ -98,7 +119,14 @@ a
 		color: $hover
 		background: rgba(0, 0, 0, 0)
 		border: 1.5px solid $hover
-		
+	&.btn_outline
+		color: $accent
+		background: rgba(0, 0, 0, 0)
+		border: 1.5px solid $hover
+		&:hover
+			background: $hover
+			color: $black
+			
 
 .heading_card
 	font-family: $main-font
@@ -110,6 +138,23 @@ a
 	flex-direction: column
 	justify-content: center
 
+.bid
+	font-family: $subtitle-font
+	font-style: normal
+	font-weight: 400
+	text-transform: capitalize
+
+.price
+	color: $accent
+	font-weight: bold
+	&::before
+		content: ''
+		display: inline-block
+		width: 8px
+		height: 15px
+		margin-right: 4px
+		background-image: url('../img/main/logos_ethereum.svg')
+
  
 #top_banner
 	background-size: cover
@@ -117,6 +162,7 @@ a
 	background-position: center
 	background-image: url('/img/main/main_banner.jpg')
 	height: 100vh
+	padding: 0
 
 #header
 	margin-bottom: 35px
@@ -168,13 +214,6 @@ a
 			padding-top: 40px
 			>.btn
 				margin-right: 16px
-			>.btn_create
-				color: $accent
-				background: rgba(0, 0, 0, 0)
-				border: 1.5px solid $hover
-				&:hover
-					background: $hover
-					color: $black
 	.stats
 		display: flex
 		box-sizing: content-box
@@ -242,27 +281,13 @@ a
 				color: $accent
 				font-weight: bold
 
-.price
-	&::before
-		content: ''
-		display: inline-block
-		width: 8px
-		height: 15px
-		margin-right: 4px
-		background-image: url('../img/main/logos_ethereum.svg')
-
 
 #notable_drops
-	height: 100vh
 	background: $white
-	padding: 80px
 	h2
 		display: flex
 		justify-content: center
 		margin-bottom: 32px 
-		font-family: $main-font
-		font-weight: 700
-		font-size: 48px
 		text-transform: capitalize
 		color: $background
 	.holder
@@ -312,4 +337,34 @@ a
 				align-items: center
 				padding: 16px 32px
 				margin: 24px 24px 24px 0
+
+
+#top_creator
+	h2
+		margin-bottom: 16px
+	.heading_subtitle
+		text-align: center
+		max-width: 420px
+		margin: auto
+		padding-bottom: 40px
+
+	.card_holder
+		display: flex
+		align-items: center
+		max-width: 390px
+		margin: 32px 24px
+		background: $light-background
+		border-radius: 32px
+		padding: 16px
+		.profile_pic
+			width: 76px
+			height: 76px
+			margin-right: 16px
+			background: $subtitle-color
+			border-radius: 100px
+	.btn_outline
+		margin: auto
+
+	
+
 

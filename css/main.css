@@ -51,6 +51,27 @@ body {
   max-width: 1200px;
   padding: 0; }
 
+section {
+  height: 100vh;
+  background: #1b1b1b;
+  padding: 80px; }
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 38px;
+  text-align: center; }
+
+.heading_subtitle {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #A8A8A8; }
+
 img {
   max-width: 100%; }
 
@@ -109,6 +130,13 @@ a {
     color: #A8D201;
     background: rgba(0, 0, 0, 0);
     border: 1.5px solid #A8D201; }
+  .btn.btn_outline {
+    color: #CAFC01;
+    background: rgba(0, 0, 0, 0);
+    border: 1.5px solid #A8D201; }
+    .btn.btn_outline:hover {
+      background: #A8D201;
+      color: black; }
 
 .heading_card {
   font-family: "Raleway", sans-serif;
@@ -127,12 +155,30 @@ a {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.bid {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize; }
+
+.price {
+  color: #CAFC01;
+  font-weight: bold; }
+  .price::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    margin-right: 4px;
+    background-image: url("../img/main/logos_ethereum.svg"); }
+
 #top_banner {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/img/main/main_banner.jpg");
-  height: 100vh; }
+  height: 100vh;
+  padding: 0; }
 
 #header {
   margin-bottom: 35px; }
@@ -193,13 +239,6 @@ a {
     padding-top: 40px; }
     .main_banner .main-banner-info .btns > .btn {
       margin-right: 16px; }
-    .main_banner .main-banner-info .btns > .btn_create {
-      color: #CAFC01;
-      background: rgba(0, 0, 0, 0);
-      border: 1.5px solid #A8D201; }
-      .main_banner .main-banner-info .btns > .btn_create:hover {
-        background: #A8D201;
-        color: black; }
 .main_banner .stats {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,18 +322,8 @@ a {
       color: #CAFC01;
       font-weight: bold; }
 
-.price::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 15px;
-  margin-right: 4px;
-  background-image: url("../img/main/logos_ethereum.svg"); }
-
 #notable_drops {
-  height: 100vh;
-  background: white;
-  padding: 80px; }
+  background: white; }
   #notable_drops h2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,9 +332,6 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 32px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
     text-transform: capitalize;
     color: #1b1b1b; }
   #notable_drops .holder {
@@ -370,5 +396,33 @@ a {
                 align-items: center;
         padding: 16px 32px;
         margin: 24px 24px 24px 0; }
+
+#top_creator h2 {
+  margin-bottom: 16px; }
+#top_creator .heading_subtitle {
+  text-align: center;
+  max-width: 420px;
+  margin: auto;
+  padding-bottom: 40px; }
+#top_creator .card_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 390px;
+  margin: 32px 24px;
+  background: #292929;
+  border-radius: 32px;
+  padding: 16px; }
+  #top_creator .card_holder .profile_pic {
+    width: 76px;
+    height: 76px;
+    margin-right: 16px;
+    background: #A8A8A8;
+    border-radius: 100px; }
+#top_creator .btn_outline {
+  margin: auto; }
 
 /*# sourceMappingURL=main.css.map */
