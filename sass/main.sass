@@ -48,6 +48,22 @@ body
 	opacity: 1
 	color: $white
 	background-color: $background
+
+@mixin heading-title($size: 48px)
+	font-family: $main-font
+	font-style: normal
+	font-weight: 700
+	font-size: $size
+	line-height: 38px
+
+@mixin sub-title($size: 16px)
+	font-family: $subtitle-font
+	font-style: normal
+	font-weight: 400
+	font-size: $size
+	color: $grey
+
+	
 	
 .container
 	max-width: 1200px
@@ -59,20 +75,8 @@ section
 	padding: 80px
 
 h2 
-	font-family: $main-font
-	font-style: normal
-	font-weight: 700
-	font-size: 48px
-	line-height: 38px
+	@include heading-title()
 	text-align: center
-
-.heading_subtitle
-	font-family: $subtitle-font
-	font-style: normal
-	font-weight: 400
-	font-size: 20px
-	line-height: 30px
-	color: $subtitle-color
 
 img
 	max-width: 100%
@@ -132,6 +136,14 @@ a
 	font-family: $main-font
 	font-size: 28px
 	font-weight: bold
+
+.card_holder
+	display: flex
+	align-items: center
+	background: $light-background
+	border-radius: 32px
+	padding: 16px
+	margin: 32px 24px
 
 .art
 	display: flex
@@ -198,18 +210,13 @@ a
 		>h1
 			padding-top: 120px
 			width: 720px
-			font-family: $main-font
-			font-style: normal
-			font-weight: 700
-			font-size: 64px
+			@include heading-title(64px)
 			line-height: 72px
 			>span
 				color: $accent
 		>p
 			padding-top: 24px
-			font-family: $subtitle-font
-			font-size: 20px
-			color: $subtitle-color
+			@include sub-title(20px)
 		.btns
 			padding-top: 40px
 			>.btn
@@ -234,8 +241,7 @@ a
 				font-weight: 700
 				color: $accent
 			>p
-				font-family: $subtitle-font
-				font-size: 16px
+				@include sub-title()
 	.hero
 		height: 640px
 		background: $glass
@@ -285,6 +291,7 @@ a
 #notable_drops
 	background: $white
 	h2
+		@include heading-title()
 		display: flex
 		justify-content: center
 		margin-bottom: 32px 
@@ -296,7 +303,7 @@ a
 		display: flex
 		position: relative
 		flex-direction: column
-		background: $subtitle-color
+		background: $grey
 		border-radius: 32px
 		>.auction
 			position: absolute
@@ -341,26 +348,24 @@ a
 
 #top_creator
 	h2
+		@include heading-title()
 		margin-bottom: 16px
 	.heading_subtitle
+		@include sub-title()
 		text-align: center
 		max-width: 420px
 		margin: auto
 		padding-bottom: 40px
-
 	.card_holder
 		display: flex
 		align-items: center
 		max-width: 390px
 		margin: 32px 24px
-		background: $light-background
-		border-radius: 32px
-		padding: 16px
 		.profile_pic
 			width: 76px
 			height: 76px
 			margin-right: 16px
-			background: $subtitle-color
+			background: $grey
 			border-radius: 100px
 	.btn_outline
 		margin: auto
@@ -368,3 +373,77 @@ a
 	
 
 
+#creator
+	h2
+		@include heading-title(48px)
+		margin-bottom: 32px
+	.card_holder
+		flex-direction: column
+		align-items: center
+		text-align: center
+		padding: 40px 32px 32px
+		height: 360px
+		>img
+			width: 64px
+			height: 64px
+			background: $accent
+			border-radius: 50px
+			outline: none
+		h3
+			@include heading-title(28px)
+			margin-top: 24px
+		>p
+			@include sub-title(14px)
+			margin-top: 8px
+			
+
+#introduction
+	h2
+		@include heading-title()
+		text-align: center
+	p
+		@include sub-title()
+		text-align: center
+		margin-top: 16px
+	>video
+		display: flex
+		margin: 32px auto
+		height: 375px
+		background: $grey
+		border-radius: 32px
+		
+
+#subscribe
+	display: flex
+	max-height: 640px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	background-image: url('/img/subscribe/white_background.svg')
+	.image
+		width: 674px
+		height: 320px
+		background: $grey
+		border-radius: 32px
+	.content
+		display: flex
+		flex-direction: column
+		align-content: flex-start
+		align-items: center
+		justify-content: center
+		h2
+			@include heading-title()
+			color: $black
+		>p
+			@include sub-title(20px)
+			text-align: left
+		input
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			padding: 8px 8px 8px 24px
+			gap: 10px
+			border: 1.5px solid $grey
+			border-radius: 32px
+			
