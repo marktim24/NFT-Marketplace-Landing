@@ -54,7 +54,7 @@ body
 	font-style: normal
 	font-weight: 700
 	font-size: $size
-	line-height: 38px
+	line-height: 42px
 
 @mixin sub-title($size: 16px)
 	font-family: $subtitle-font
@@ -143,8 +143,8 @@ a
 	background: $light-background
 	border-radius: 32px
 	padding: 16px
-	margin: 32px 24px
-
+	margin-top: 32px
+	
 .art
 	display: flex
 	flex-direction: column
@@ -360,7 +360,7 @@ a
 		display: flex
 		align-items: center
 		max-width: 390px
-		margin: 32px 24px
+		margin-top: 32px
 		.profile_pic
 			width: 76px
 			height: 76px
@@ -368,7 +368,8 @@ a
 			background: $grey
 			border-radius: 100px
 	.btn_outline
-		margin: auto
+		margin: 56px auto
+		
 
 	
 
@@ -415,13 +416,14 @@ a
 
 #subscribe
 	display: flex
+	height: auto
 	max-height: 640px
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center
 	background-image: url('/img/subscribe/white_background.svg')
 	.image
-		width: 674px
+		width: 675px
 		height: 320px
 		background: $grey
 		border-radius: 32px
@@ -429,15 +431,19 @@ a
 		display: flex
 		flex-direction: column
 		align-content: flex-start
-		align-items: center
-		justify-content: center
+		margin: 26px 0 0 40px
 		h2
 			@include heading-title()
 			color: $black
+			max-width: 400px
+			text-align: left
+			margin-bottom: 16px
+			line-height: 46px
 		>p
 			@include sub-title(20px)
 			text-align: left
-		input
+			margin-bottom: 32px
+		.input_form
 			display: flex
 			flex-direction: row
 			justify-content: space-between
@@ -445,5 +451,11 @@ a
 			padding: 8px 8px 8px 24px
 			gap: 10px
 			border: 1.5px solid $grey
-			border-radius: 32px
+			border-radius: 50px
+			>input
+				border: none
+				outline: none
+			.btn
+				font-size: 14px
+				padding: 16px 24px
 			
